@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Minha Amada Loyanny!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff0f5;
+            color: #ff1493;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-top: 20px;
+            color: #ff69b4;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            color: #d63384;
+            max-width: 90%;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        /* Galeria de fotos */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .photo {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Corações animados de fundo */
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff69b4;
+            transform: rotate(45deg);
+            animation: float 10s infinite ease-in-out;
+            opacity: 0.8;
+            border-radius: 20%;
+        }
+
+        .heart::before, .heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 10px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(45deg); opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-800px) rotate(45deg); opacity: 0; }
+        }
+
+        /* Vários corações em posições e durações diferentes */
+        .heart:nth-child(1) { left: 10%; animation-duration: 8s; }
+        .heart:nth-child(2) { left: 25%; animation-duration: 6s; }
+        .heart:nth-child(3) { left: 40%; animation-duration: 7s; }
+        .heart:nth-child(4) { left: 55%; animation-duration: 5s; }
+        .heart:nth-child(5) { left: 70%; animation-duration: 9s; }
+        .heart:nth-child(6) { left: 85%; animation-duration: 7.5s; }
+    </style>
+</head>
+<body>
+    <h1>Feliz Aniversário, Amor da minha vida! 💖</h1>
+    <p class="message">
+       Venho através desse html falar tudo o que eu sinto por você dediquei um pouco do meu tempo digitando esses pequenos códigos para celebrar com você, Loyanny,meu amorzinho a luz da minha vida e o motivo do meu sorriso. Cada dia ao seu lado é um presente que guardo no coração. Você me completa e torna minha vida mais linda e cheia de sentido obrigado por ser você essa pessoa maravilhosa palavras me faltam para expressar toda a sua douçura sua delicadeza sua simpatia, sua alegria que contagia a mim, eu estou muito feliz por estar fazendo parte desse momento em sua vida meu amor que possamos comemorar muitos e muitos anos como namorados, noivos e os finalmentes, casados..... quero viver muita coisa ao seu lado vidinha cada dia que passa tenho uma certeza que quero conquistar o mundo ao seu lado, seja nas dificuldades, seja nas bençãos alegrias e dores, más o importante é que nunca possamos desistir um do outro. Parabéns, meu amor! Que seu dia seja tão maravilhoso quanto o amor que sinto por você. Te amo infinitamente! ❤️
+    </p>
+
+    <!-- Galeria de Fotos -->
+    <div class="gallery">
+        <div class="photo">
+            <img src="WhatsApp-Image.jpg" alt="Foto 1">
+        </div>
+        <div class="photo">
+            <img src="foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="photo">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+        <div class="photo">
+            <img src="foto4.jpg" alt="Foto 4">
+        </div>
+        <div class="photo">
+            <img src="foto5.jpg" alt="Foto 5">
+        </div>
+    </div>
+
+    <!-- Corações de fundo -->
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+</body>
+</html>
